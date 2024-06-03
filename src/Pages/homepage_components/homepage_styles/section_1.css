@@ -1,0 +1,39 @@
+
+
+#_gradient{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    position:absolute;
+    height:700px;
+    width:100%;
+    top:0;
+    z-index:10;
+    background-color:rgba(0,0,0,0.6)
+}
+
+#low_panel{
+position:absolute;
+top:85%;
+background-color:rgba(236, 190, 4, 0.156);
+height:2px;
+width:80%;
+border:none;
+
+    
+}
+
+#webgl{
+    position:absolute;
+    z-index:1;
+}
+
+
+
+
+
+.intro_header{
+    font-size:25px;
+    
+}

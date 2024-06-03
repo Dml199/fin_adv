@@ -1,0 +1,23 @@
+#stock_info_table{
+    width:40%;
+}
+
+
+#sec_2{
+    display:flex;
+    margin:0px;
+    height:900px;
+    background-color:rgb(9, 9, 10);
+    width:100%;
+    position:absolute;
+    top:700px;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+
+#info_list{
+    background-color:grey;
+    
+}
