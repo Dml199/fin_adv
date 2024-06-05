@@ -8,9 +8,11 @@
     position:absolute;
     height:700px;
     width:100%;
-    top:0;
+
     z-index:10;
-    background-color:rgba(0,0,0,0.6)
+    background-color:rgba(0,0,0,0.6);
+    margin:0;
+
 }
 
 #low_panel{
