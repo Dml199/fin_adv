@@ -41,7 +41,7 @@ export default function THREE_scene() {
   function animate(timestamp) {
     
     renderer.render(scene, camera);
-    //scene.children[2].children[0].rotation.y = timestamp / 10000;
+    scene.children[2].children[0].rotation.y = timestamp / 10000;
   }
 
   window.addEventListener("resize", () => {
