@@ -6,7 +6,7 @@
 #sec_2{
     display:flex;
     margin:0px;
-    height:900px;
+    height:1200px;
     background-color:rgb(9, 9, 10);
     width:100vw;
     position:absolute;
@@ -18,33 +18,33 @@
 
 #sec_2_container{
     display:flex;
-    width:80%;
+    width:90%;
     
   
 
 }
 #info_list{
     background-color:rgb(18, 18, 20);
-    width:100%;
-    height:fit-content;
-    min-width:330px;
-    max-width:500px;
+    height:100%;
+    width:50%;
+
+
    
 
 }
 
 
 #candle_plot{
-width:100%;
-min-width:730px;
-max-width:700px;
+min-width:950px;
+
+
 
 }
 
 #stock_info_table {
     width:100%;
 
-color:rgba(235, 198, 53, 0.733);
+color:rgba(236, 225, 178, 0.733);
 
 }
 
@@ -56,26 +56,26 @@ color:rgba(235, 198, 53, 0.733);
 
 }
 #stock_info_table div{
-    
+    background-color:rgba(65, 58, 34, 0.507);
     width:100%;
-    
-    
+    padding:10px;
+    font-size:20px;
     }
 
 #stock_info_table div:hover {
-background-color:rgba(46, 43, 43, 0.3);
+    background-color:rgba(209, 179, 89, 0.658);
 
 }
 
 
 #stock_info_table div:focus {
-    background-color:rgba(75, 69, 69, 0.3)
+    background-color:rgba(209, 179, 89, 0.808);
         
     }
 
 #table_fundam {
     width: 100%;
-   font-size:10px; 
+    
    height:100%;
    
 }
@@ -89,7 +89,7 @@ height:20px;
 
 #table_fundam td{
 color:rgb(141, 135, 127);
-font-size:10px;
+font-size:14px;
 padding:0px;
 
 
@@ -97,19 +97,68 @@ padding:0px;
 }
 
 
-@media screen and (max-width:1220px){
+
+
+
+@media screen and (max-width:1600px){
+
+
+
+    #candle_plot{
+     max-width:600px;
+     min-width:800px;
+    }
+    
+    #table_fundam td{
+        font-size:10px;
+    }
+    #info_list div {
+        width:100%;
+        font-size:16px;
+    }
+}
+
+
+@media screen and (max-width:1300px){
 
     #sec_2_container{
         flex-direction:column;
         height:80%;
-        width:70%;
+        width:80%;
     }
 
     #candle_plot{
-        min-width:500px;
+    max-width:1200px;
+    min-width:300px;
+
     }
+
     #info_list{
-        min-width:500px;
-        max-width:700px;
+        width:100%;
+        
+        height:fit-content;
+    }
+
+    #info_list div {
+        width:100%;
+        font-size:18px;
+    }
+    #table_fundam td{
+        font-size:12px;
     }
 }
+
+@media screen and (max-width:900px){
+    #info_list div {
+        width:100%;
+        font-size:12px;
+    }
+
+    #table_fundam td{
+        font-size:8px;
+    }
+    #table_fundam th{
+        font-size:10px;
+    }
+}
+
