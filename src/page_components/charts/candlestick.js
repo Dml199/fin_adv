@@ -124,7 +124,7 @@ export default function Candle_plot() {
 
   return (
     <div id="candlestick_chart">
-      <svg id="svg_plot" viewBox="0 0 800 450">
+      <svg id="svg_plot" viewBox= "0 0 800 450">
         <g ref={referer.xAxisRef} id="axis_x"></g>
         <g ref={referer.yAxisRef} id="axis_y"></g>
         <svg ref={referer.g_ref}></svg>
