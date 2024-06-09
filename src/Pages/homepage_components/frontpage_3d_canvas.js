@@ -41,8 +41,12 @@ export default function THREE_scene() {
   });
 
   function animate(timestamp) {
-   
+    sizes.width=window.innerWidth;
+    renderer.setPixelRatio(window.devicePixelRatio)
+    renderer.setSize(sizes.width,sizes.height)
     renderer.render(scene, camera);
+
+
     scene.children[2].children[0].rotation.y = timestamp / 10000;
     
   }
@@ -51,12 +55,12 @@ export default function THREE_scene() {
 
   window.addEventListener("resize", () => {
 
-    sizes.width=window.innerWidth;
-    camera.aspect = window.innerWidth / sizes.height;
-    camera.updateProjectionMatrix();
+    
+ 
     renderer.setPixelRatio(window.devicePixelRatio)
     renderer.setSize(sizes.width,sizes.height)
-
+    camera.aspect = window.innerWidth / sizes.height;
+    camera.updateProjectionMatrix();
   
    
     
