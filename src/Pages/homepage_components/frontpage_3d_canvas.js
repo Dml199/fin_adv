@@ -1,19 +1,21 @@
 import * as THREE from "three";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 import { useEffect, useRef } from "react";
-
+import "./homepage_styles/section_1.css"
 
 export default function THREE_scene() {
   const sizes = {
-    width: window.innerWidth,
+    width:window.innerWidth,
     height: 700,
   };
+
   const canvas = useRef(null);
   const scene = new THREE.Scene();
   const loader = new GLTFLoader();
   const camera = new THREE.PerspectiveCamera(45, sizes.width / sizes.height);
   var renderer;
-  var controls;
+  var ctx;
+
   camera.position.set(35.6, 37.8, -24.5);
   camera.lookAt(-2.28, 0.75, 2.47);
 
@@ -39,24 +41,43 @@ export default function THREE_scene() {
   });
 
   function animate(timestamp) {
-    
+   
     renderer.render(scene, camera);
     scene.children[2].children[0].rotation.y = timestamp / 10000;
+    
   }
 
+
+
   window.addEventListener("resize", () => {
-    sizes.width = window.innerWidth;
-    camera.aspect = sizes.width / sizes.height;
+
+    sizes.width=window.innerWidth;
+    camera.aspect = window.innerWidth / sizes.height;
     camera.updateProjectionMatrix();
-    renderer.setSize(sizes.width, sizes.height);
+    renderer.setPixelRatio(window.devicePixelRatio)
+    renderer.setSize(sizes.width,sizes.height)
+
+  
+   
+    
+
+
+
+  
+ 
+    
+    
   });
+
   useEffect(() => {
     init();
+
+    ctx = canvas.current.getContext("webgl2")
   });
 
   return (
     <div>
-      <canvas id="webgl" ref={canvas}></canvas>
+      <canvas id="webgl"  ref={canvas}></canvas>
     </div>
   );
 }

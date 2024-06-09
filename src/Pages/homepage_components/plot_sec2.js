@@ -33,8 +33,7 @@ function Symbol_table_info( props) {
     
     f_.forEach(elem =>{if(elem["Ticker"]==symbol) data_arr.push(elem)})
  }  extractData()
- console.clear()
-    console.log(data_arr)
+
     
     useEffect(()=>{extractData(props.symbol)})
   return (

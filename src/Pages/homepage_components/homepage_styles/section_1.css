@@ -1,20 +1,26 @@
 
 
-#_gradient{
+#_scene{
     display:flex;
     flex-direction:row;
     justify-content:center;
     align-items:center;
-    position:absolute;
-    height:700px;
-    width:100%;
 
-    z-index:10;
-    background-color:rgba(0,0,0,0.6);
+    height:700px;
+    
+    
+    z-index:5;
+    background-color:rgba(0,0,0,0.1);
     margin:0;
 
 }
-
+#black_cont{
+    position:absolute;
+    height:700px;
+    width:100%;
+    z-index:5;
+    background-color:rgba(0,0,0,0.7)
+}
 #low_panel{
 position:absolute;
 top:85%;
@@ -27,8 +33,10 @@ border:none;
 }
 
 #webgl{
-    position:absolute;
+
     z-index:1;
+
+    height:700px;
 }
 
 
