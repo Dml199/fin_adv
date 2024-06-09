@@ -45,7 +45,7 @@ export default function THREE_scene() {
     renderer.setPixelRatio(window.devicePixelRatio)
     renderer.setSize(sizes.width,sizes.height)
     renderer.render(scene, camera);
-
+    camera.updateProjectionMatrix();
 
     scene.children[2].children[0].rotation.y = timestamp / 10000;
     
