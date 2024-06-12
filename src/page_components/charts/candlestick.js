@@ -103,7 +103,7 @@ export default function Candle_plot() {
       .attr("transform", (d) => `translate(${3},0)`)
       .attr("stroke-width", "0.4px");
     g.append("rect")
-      .attr("width", "3px")
+      .attr("width", "4px")
       .attr("height", (d) => {
         return `${Math.abs(y(d["1. open"]) - y(d["4. close"]))}`;
       })

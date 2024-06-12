@@ -19,7 +19,7 @@ export default function HomePage () {
        <div id="black_cont"></div>
         <div id="_scene">
         <THREE_scene />
-        <hr id= "low_panel"></hr>
+       
         
         </div>
         </div>

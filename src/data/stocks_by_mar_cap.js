@@ -1,6 +1,6 @@
 
 
-export const data = [
+export const mar_cap = [
 
 
   {

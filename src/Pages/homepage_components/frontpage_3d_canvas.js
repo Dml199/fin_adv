@@ -14,7 +14,7 @@ export default function THREE_scene() {
   const loader = new GLTFLoader();
   const camera = new THREE.PerspectiveCamera(45, sizes.width / sizes.height);
   var renderer;
-  var ctx;
+
 
   camera.position.set(35.6, 37.8, -24.5);
   camera.lookAt(-2.28, 0.75, 2.47);
@@ -42,10 +42,10 @@ export default function THREE_scene() {
 
   function animate(timestamp) {
     sizes.width=window.innerWidth;
-    renderer.setPixelRatio(window.devicePixelRatio)
+
     renderer.setSize(sizes.width,sizes.height)
     renderer.render(scene, camera);
-    camera.updateProjectionMatrix();
+  
 
     scene.children[2].children[0].rotation.y = timestamp / 10000;
     
@@ -76,7 +76,7 @@ export default function THREE_scene() {
   useEffect(() => {
     init();
 
-    ctx = canvas.current.getContext("webgl2")
+   
   });
 
   return (

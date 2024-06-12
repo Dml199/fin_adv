@@ -404,7 +404,7 @@ export const f_ = [
   {
     "Ticker": "AAPL",
     "Description": "effectOfAccountingCharges",
-    "Values": ["117M", "116M", "113M", "109M"],
+    "Values": ["117M", "110M", "113M", "109M"],
     "2": null
   },
   {
@@ -7790,7 +7790,7 @@ export const f_ = [
   {
     "Ticker": "FDX",
     "Description": "researchDevelopment",
-    "Values": ["117M", "116M", "113M", "109M"],
+    "Values": ["117M", "109M", "113M", "109M"],
     "2": null
   },
   {

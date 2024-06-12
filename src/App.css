@@ -1,8 +1,11 @@
 *{
     margin:0px;
     padding:0px;
+    box-sizing:border-box;
+   
 }
 
 .App{
     margin:0px;
+    scrollbar-color:rgb(148, 80, 80);
 }

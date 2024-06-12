@@ -2,7 +2,7 @@
   "name": "project",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://dml.199.github.io/fin_adv/",
+ 
   "dependencies": {
     
     "@reduxjs/toolkit": "^2.2.3",
